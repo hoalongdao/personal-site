@@ -18,7 +18,7 @@ Tính cả tuần, Nasdaq mất 4,5%, chấm dứt chuỗi tăng kéo dài một
 
 Cổ phiếu CoreWeave giảm gần 12% trong phiên thứ Sáu. Cả tuần, nó mất khoảng một phần tư giá trị. Mã này giảm mọi phiên, trừ thứ Năm.
 
-Lý do là nợ. Theo CNBC, tổng nợ của CoreWeave đã vượt 51 tỷ USD. Công ty vay để xây hạ tầng AI. Lạm phát cao hơn mục tiêu khiến chi phí vay đắt lên. Nhà đầu tư bắt đầu lo các công ty công nghệ đang vay quá nhiều cho cơn sốt AI.
+Lý do là nợ. Theo CNBC, tổng nợ và các nghĩa vụ tài chính khác của CoreWeave đã vượt 51 tỷ USD. Công ty vay để xây hạ tầng AI. Lạm phát cao hơn mục tiêu khiến chi phí vay đắt lên. Nhà đầu tư bắt đầu lo các công ty công nghệ đang vay quá nhiều cho cơn sốt AI.
 
 Thị trường trái phiếu còn đáng sợ hơn thị trường cổ phiếu. Một trái phiếu CoreWeave đáo hạn năm 2031, phát hành hồi tháng 4 với lợi suất 9,75%, trong tuần có lúc gần chạm 16%. Hôm thứ Sáu, nó đứng quanh 14,5%.
 
@@ -30,9 +30,9 @@ Không phải ai cũng bi quan. Hôm thứ Năm, CEO Nvidia Jensen Huang nói t�
 
 Cơn bán tháo lan sang nhóm bán dẫn. Quỹ VanEck Semiconductor ETF (SMH) mất 3% trong phiên thứ Sáu và 10% cả tuần, mức giảm tuần mạnh nhất kể từ tháng 4/2025. Micron, AMD và Sandisk dẫn đầu chiều giảm.
 
-Ở châu Á, Kospi của Hàn Quốc khép tuần giảm 14,5%, tuần tệ nhất kể từ tháng 10/2008. Samsung giảm gần 20%, SK Hynix giảm gần 25% trong tuần. Theo CNBC, Kospi đã mất gần 40% từ đỉnh tháng 6 và nằm hẳn trong thị trường giá xuống.
+Ở châu Á, Kospi của Hàn Quốc khép tuần giảm 14,5%, tuần tệ nhất kể từ tháng 10/2008. Samsung giảm gần 18%, SK Hynix giảm hơn 24% trong tuần. Theo CNBC, Kospi đã mất gần 40% từ đỉnh tháng 6 và nằm hẳn trong thị trường giá xuống.
 
-Chỉ số biến động VIX vượt 22, lần đầu tiên sau bốn tháng.
+Chỉ số biến động VIX có lúc vượt 22 trong phiên, lần đầu tiên sau bốn tháng.
 
 ## Dầu 110 USD và áp lực lãi suất
 
