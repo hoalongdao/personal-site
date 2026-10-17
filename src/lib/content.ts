@@ -1,6 +1,6 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 
-export const SITE_NAME = 'hoalongdao';
+export const SITE_NAME = 'Mike';
 export const SITE_DESC = 'Exclusives, daily digests, and a public trading dashboard.';
 
 export const url = (p = '') => {

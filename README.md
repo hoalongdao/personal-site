@@ -1,6 +1,6 @@
 # personal-site
 
-Static personal site for **hoalongdao**, built with [Astro](https://astro.build) and deployed to GitHub Pages.
+Static personal site for **Mike**, built with [Astro](https://astro.build) and deployed to GitHub Pages.
 
 Live: https://hoalongdao.github.io/personal-site/
 
