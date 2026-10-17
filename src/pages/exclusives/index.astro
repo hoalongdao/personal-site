@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro';
+import { publicExclusives, slugOf, url, fmtDate } from '../../lib/content';
+const items = await publicExclusives();
+---
+<Base title="Exclusives">
+  <h1>Exclusives</h1>
+  {items.length ? (
+    <ul class="list">{items.map((e) => <li><a href={url(`exclusives/${slugOf(e)}/`)}>{e.data.title}</a> <span class="muted">· {fmtDate(e.data.date)}</span>{e.data.excerpt && <div class="muted">{e.data.excerpt}</div>}</li>)}</ul>
+  ) : <p class="empty">No Exclusives published yet.</p>}
+</Base>

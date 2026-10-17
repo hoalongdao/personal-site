@@ -1,0 +1,14 @@
+---
+import { render } from 'astro:content';
+import Post from '../../layouts/Post.astro';
+import { allDigests, slugOf } from '../../lib/content';
+export async function getStaticPaths() {
+  const items = await allDigests();
+  return items.map((entry) => ({ params: { slug: slugOf(entry) }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<Post kind="Digest" title={entry.data.title} date={entry.data.date} excerpt={entry.data.excerpt} tags={entry.data.tags}>
+  <Content />
+</Post>

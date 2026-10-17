@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import { publicExclusives, allDigests, slugOf, url, fmtDate } from '../lib/content';
+const ex = await publicExclusives();
+const dg = await allDigests();
+const hero = ex[0];
+const signal = dg[0];
+---
+<Base>
+  <section>
+    <div class="label">Latest Exclusive</div>
+    {hero ? (
+      <>
+        <h1><a href={url(`exclusives/${slugOf(hero)}/`)} style="text-decoration:none">{hero.data.title}</a></h1>
+        <p class="muted">{fmtDate(hero.data.date)}</p>
+        {hero.data.excerpt && <p>{hero.data.excerpt}</p>}
+        <p><a href={url(`exclusives/${slugOf(hero)}/`)}>Read →</a></p>
+      </>
+    ) : (
+      <><h1>hoalongdao</h1><p class="empty">No Exclusives published yet.</p></>
+    )}
+  </section>
+
+  <section class="card">
+    <div class="label">Signal · Latest Digest</div>
+    {signal ? (
+      <>
+        <h2 style="margin:.3em 0"><a href={url(`digests/${slugOf(signal)}/`)} style="text-decoration:none">{signal.data.title}</a></h2>
+        <p class="muted" style="margin:0">{fmtDate(signal.data.date)}</p>
+        {signal.data.excerpt && <p>{signal.data.excerpt}</p>}
+      </>
+    ) : <p class="empty">No Digests published yet.</p>}
+  </section>
+
+  <section>
+    <h2>Exclusives</h2>
+    {ex.length ? (
+      <ul class="list">{ex.slice(0, 10).map((e) => <li><a href={url(`exclusives/${slugOf(e)}/`)}>{e.data.title}</a> <span class="muted">· {fmtDate(e.data.date)}</span></li>)}</ul>
+    ) : <p class="empty">Nothing here yet.</p>}
+    {ex.length > 10 && <p><a href={url('exclusives/')}>All Exclusives →</a></p>}
+  </section>
+
+  <section>
+    <h2>Digests</h2>
+    {dg.length ? (
+      <ul class="list">{dg.slice(0, 10).map((e) => <li><a href={url(`digests/${slugOf(e)}/`)}>{e.data.title}</a> <span class="muted">· {fmtDate(e.data.date)}</span></li>)}</ul>
+    ) : <p class="empty">Nothing here yet.</p>}
+    {dg.length > 10 && <p><a href={url('digests/')}>All Digests →</a></p>}
+  </section>
+</Base>

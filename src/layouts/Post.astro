@@ -1,0 +1,15 @@
+---
+import Base from './Base.astro';
+import { fmtDate } from '../lib/content';
+interface Props { title: string; date: Date; excerpt?: string; tags?: string[]; kind: string }
+const { title, date, excerpt, tags = [], kind } = Astro.props;
+---
+<Base title={title} description={excerpt}>
+  <article>
+    <div class="label">{kind}</div>
+    <h1>{title}</h1>
+    <p class="muted"><time datetime={date.toISOString()}>{fmtDate(date)}</time></p>
+    {tags.length > 0 && <p class="tags">{tags.map((t) => <span>#{t}</span>)}</p>}
+    <slot />
+  </article>
+</Base>

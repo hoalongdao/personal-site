@@ -1,0 +1,93 @@
+---
+import fs from 'node:fs';
+import Base from '../../layouts/Base.astro';
+
+type Num = number | null | undefined;
+let book: any = {};
+try {
+  book = JSON.parse(fs.readFileSync(new URL('../../../public/dashboard/book.json', import.meta.url), 'utf8'));
+} catch { book = {}; }
+
+const positions: any[] = Array.isArray(book.positions) ? book.positions : [];
+const orders: any[] = Array.isArray(book.orders) ? book.orders : [];
+const history: any[] = Array.isArray(book.history) ? book.history : [];
+const trades: any[] = Array.isArray(book.trades) ? book.trades : [];
+const idx = book.index && typeof book.index === 'object' ? book.index : null;
+const hasData = !!book.generated_at;
+
+const money = (n: Num) => (typeof n === 'number' ? n.toLocaleString('en-US', { style: 'currency', currency: 'USD' }) : '—');
+const num = (n: Num, d = 2) => (typeof n === 'number' ? n.toLocaleString('en-US', { maximumFractionDigits: d }) : '—');
+const pct = (n: Num) => (typeof n === 'number' ? `${n >= 0 ? '+' : ''}${n.toFixed(2)}%` : '—');
+
+// Sparkline of weekday closes (equity)
+const eq = history.map((h) => h.equity).filter((v) => typeof v === 'number');
+let spark = '';
+if (eq.length > 1) {
+  const min = Math.min(...eq), max = Math.max(...eq), span = max - min || 1;
+  spark = eq.map((v, i) => `${(i / (eq.length - 1)) * 300},${60 - ((v - min) / span) * 56 - 2}`).join(' ');
+}
+---
+<Base title="Dashboard" description="Public trading book dashboard.">
+  <h1>Dashboard</h1>
+  {hasData ? (
+    <p class="muted">Updated <time datetime={book.generated_at}>{new Date(book.generated_at).toUTCString()}</time></p>
+  ) : (
+    <div class="card"><strong>No data yet</strong><p class="muted" style="margin:.3em 0 0">The book has not been published. Numbers will appear here after the first update.</p></div>
+  )}
+
+  <section class="grid">
+    <div class="card stat"><div class="label">Equity</div><div class="big">{money(book.equity)}</div></div>
+    <div class="card stat"><div class="label">Cash</div><div class="big">{money(book.cash)}</div></div>
+    <div class="card stat"><div class="label">Unsettled</div><div class="big">{money(book.unsettled)}</div></div>
+    <div class="card stat"><div class="label">Buying power</div><div class="big">{money(book.buying_power)}</div></div>
+  </section>
+
+  <section class="card">
+    <div class="label">Index</div>
+    {idx ? (
+      <p style="margin:.3em 0"><strong>{idx.symbol ?? '—'}</strong> {num(idx.price)} <span class="muted">{pct(idx.change_pct)}</span>{idx.as_of && <span class="muted"> · {idx.as_of}</span>}</p>
+    ) : <p class="empty" style="margin:.3em 0">No data yet</p>}
+  </section>
+
+  <h2>Positions</h2>
+  {positions.length ? (
+    <div class="table-wrap"><table>
+      <thead><tr><th>Symbol</th><th>Qty</th><th>Avg cost</th><th>Price</th><th>Value</th><th>Unrealized</th></tr></thead>
+      <tbody>{positions.map((p) => <tr><td>{p.symbol}</td><td>{num(p.qty, 4)}</td><td>{money(p.avg_cost)}</td><td>{money(p.price)}</td><td>{money(p.market_value)}</td><td>{money(p.unrealized_pl)} <span class="muted">{pct(p.unrealized_pl_pct)}</span></td></tr>)}</tbody>
+    </table></div>
+  ) : <p class="empty">No data yet</p>}
+
+  <h2>Open orders</h2>
+  {orders.length ? (
+    <div class="table-wrap"><table>
+      <thead><tr><th>Symbol</th><th>Side</th><th>Qty</th><th>Type</th><th>Limit</th><th>Status</th><th>Submitted</th></tr></thead>
+      <tbody>{orders.map((o) => <tr><td>{o.symbol}</td><td>{o.side}</td><td>{num(o.qty, 4)}</td><td>{o.type ?? '—'}</td><td>{money(o.limit_price)}</td><td>{o.status ?? '—'}</td><td>{o.submitted_at ?? '—'}</td></tr>)}</tbody>
+    </table></div>
+  ) : <p class="empty">No data yet</p>}
+
+  <h2>History</h2>
+  {history.length ? (
+    <>
+      {spark && <svg viewBox="0 0 300 60" width="100%" height="80" preserveAspectRatio="none" aria-label="Equity history"><polyline points={spark} fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke" /></svg>}
+      <div class="table-wrap"><table>
+        <thead><tr><th>Date</th><th>Equity close</th><th>Index close</th></tr></thead>
+        <tbody>{[...history].reverse().map((h) => <tr><td>{h.date}</td><td>{money(h.equity)}</td><td>{num(h.index_close)}</td></tr>)}</tbody>
+      </table></div>
+    </>
+  ) : <p class="empty">No data yet</p>}
+
+  <h2>Trades</h2>
+  {trades.length ? (
+    <ul class="list">{[...trades].reverse().map((t) => (
+      <li><strong>{t.side?.toUpperCase?.() ?? ''} {num(t.qty, 4)} {t.symbol}</strong> @ {money(t.price)} <span class="muted">· {t.time ?? ''}</span>{t.reasoning && <div>{t.reasoning}</div>}</li>
+    ))}</ul>
+  ) : <p class="empty">No data yet</p>}
+
+  <p class="muted" style="margin-top:2em;font-size:.85rem">Raw data: <a href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/dashboard/book.json`}>book.json</a></p>
+</Base>
+<style>
+  .grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:12px; }
+  .grid .card { margin:0; }
+  .big { font-size:1.4rem; font-weight:700; font-variant-numeric:tabular-nums; }
+  @media (min-width: 640px) { .grid { grid-template-columns:repeat(4, 1fr); } .big { font-size:1.15rem; } }
+</style>
