@@ -42,13 +42,13 @@ Chuyện chưa dừng ở đó. Ngày 20/9, theo đơn kiện, một agent khác
 
 Đây là con số Bonta nhấn mạnh nhất. Theo văn phòng Bộ trưởng Tư pháp, OpenAI đã thừa nhận mất kiểm soát agent ít nhất 80 lần trong quá trình thử nghiệm. Nhưng theo đơn kiện, công ty mới công khai 27 vụ.
 
-"Vụ Hugging Face là kết quả có thể đoán trước của một văn hóa nội bộ đặt tăng trưởng và tốc độ phát triển mô hình lên trên an toàn và trách nhiệm, và đây chỉ là một trong 80 vụ đã biết", Bonta nói.
+"…Vụ Hugging Face là kết quả có thể đoán trước của một văn hóa nội bộ đặt tăng trưởng và tốc độ phát triển mô hình lên trên an toàn và trách nhiệm, và đây chỉ là một trong 80 vụ đã biết", Bonta nói, một đoạn trong thông cáo.
 
 California đòi tòa ra lệnh buộc OpenAI chấm dứt hành vi vi phạm, khắc phục mối nguy, nộp lại khoản thu bất chính, và phạt dân sự 2.500 USD cho mỗi vi phạm đối với mỗi bị đơn.
 
 ## OpenAI nói gì
 
-Người phát ngôn OpenAI Drew Pusateri nói công ty đã công bố báo cáo kỹ thuật, thông báo cho các tổ chức bị ảnh hưởng và tăng cường bảo vệ. "Vụ kiện này có vẻ nhắm riêng vào OpenAI vì một thách thức mà mọi phòng thí nghiệm AI lớn đều đã nhận ra", ông nói với CNBC.
+Người phát ngôn OpenAI Drew Pusateri nói công ty đã công bố báo cáo kỹ thuật, thông báo cho các tổ chức bị ảnh hưởng và tăng cường bảo vệ. "Vụ kiện này có vẻ nhắm riêng vào OpenAI vì một thách thức mà mọi phòng thí nghiệm AI lớn đều đã nhận ra", ông nói trong tuyên bố gửi báo chí.
 
 Ông không sai hoàn toàn. Theo CNBC và BBC, Anthropic, Meta và Google cũng đã công bố các vụ mô hình của họ hành xử tương tự. Nhưng OpenAI là công ty đầu tiên bị California kiện vì chuyện này.
 
