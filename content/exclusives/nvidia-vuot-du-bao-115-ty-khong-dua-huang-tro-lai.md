@@ -10,7 +10,7 @@ tags: ['nvidia', 'ai', 'chung-khoan', 'bao-cao-tai-chinh', 'jensen-huang']
 
 Nvidia vừa qua bài kiểm tra lớn nhất của năm. Số liệu đẹp hơn dự báo. Nhưng cánh cửa với Jensen Huang đã đóng lại.
 
-Tối thứ Ba 17/11, Nvidia công bố kết quả quý 3 năm tài chính 2027. Đây là báo cáo đầu tiên kể từ khi Huang từ chức CEO tuần trước. Cổ phiếu tăng hơn 4% ngoài giờ giao dịch, theo Reuters.
+Tối thứ Ba 17/11 (giờ Mỹ), Nvidia công bố kết quả quý 3 năm tài chính 2027. Đây là báo cáo đầu tiên kể từ khi Huang từ chức CEO tuần trước. Cổ phiếu tăng hơn 4% ngoài giờ giao dịch, theo Reuters.
 
 ## Những con số chính
 
@@ -20,7 +20,7 @@ Lợi nhuận ròng theo chuẩn GAAP là 65,3 tỷ USD. Lợi nhuận trên m�
 
 Mảng trung tâm dữ liệu, nguồn tiền chính của Nvidia, mang về 107,6 tỷ USD. Mức tăng là 110% so với cùng kỳ.
 
-Biên lợi nhuận gộp non-GAAP đạt 74,9%. Theo CNBC, StreetAccount dự báo 74%.
+Biên lợi nhuận gộp non-GAAP đạt 74,9%, giảm nhẹ so với 75,0% quý trước. Theo CNBC, StreetAccount dự báo 74%. Nvidia cho biết mức giảm này là do đang đẩy mạnh sản xuất GPU Rubin.
 
 ## Dự báo: tăng tiếp, nhưng không tính Trung Quốc
 
@@ -30,7 +30,7 @@ Công ty nói rõ: dự báo không tính bất kỳ doanh thu điện toán tru
 
 Câu hỏi lớn trước buổi họp là Nvidia có rút lại mục tiêu tăng trưởng 70% cho năm tài chính 2028 hay không. Câu trả lời ngược lại. Colette Kress, giám đốc tài chính kiêm CEO tạm quyền, nâng mục tiêu lên 75%.
 
-Biên lợi nhuận gộp quý tới được dự báo giảm xuống 71% đến 72%. Theo CNBC, Nvidia giải thích biên lợi nhuận giảm là do đang đẩy mạnh sản xuất GPU Rubin.
+Biên lợi nhuận gộp quý tới được dự báo giảm xuống 71% đến 72%. Đây là mức Nvidia đã đưa ra từ tháng 8. Công ty nói quý 4 sẽ là đáy, và gắn mức này với chi phí bộ nhớ.
 
 ## "Hội đồng không có ý định đưa Jensen trở lại"
 
@@ -44,9 +44,9 @@ Theo BBC, Jones cho biết công ty đang làm việc với một công ty săn 
 
 ## Vì sao chuyện Trung Quốc quan trọng
 
-Huang rời đi sau khi lộ chuyện ngoại tình với một nữ doanh nhân Trung Quốc. Theo Reuters, tình báo Mỹ đang điều tra người này vì quan hệ với chính phủ Trung Quốc. Vụ việc đã thổi bay hơn 700 tỷ USD giá trị vốn hóa của Nvidia.
+Huang rời đi hôm 12/11 sau khi lộ nhiều chuyện ngoại tình: một với nữ doanh nhân Trung Quốc Alice Huang, và theo BBC cùng The Verge, ít nhất một với một lãnh đạo của Nvidia, được các báo này nêu tên là Kimberly Powell. Hội đồng quản trị nêu lý do là hành vi cá nhân không phù hợp với quy tắc ứng xử của công ty. Theo Reuters, tình báo Mỹ đang điều tra Alice Huang vì quan hệ với chính phủ Trung Quốc. Vụ việc đã thổi bay hơn 700 tỷ USD giá trị vốn hóa của Nvidia.
 
-Người phụ nữ đó, Alice Huang, từng điều hành Megaspeed, một công ty điện toán ở Singapore. Bộ Tư pháp và Bộ Thương mại Mỹ xác nhận đang điều tra Megaspeed vì nghi vi phạm quy định kiểm soát xuất khẩu, theo CNBC.
+Alice Huang từng điều hành Megaspeed, một công ty điện toán ở Singapore. Bộ Tư pháp và Bộ Thương mại Mỹ xác nhận đang điều tra Megaspeed vì nghi vi phạm quy định kiểm soát xuất khẩu, theo CNBC.
 
 Thứ Hai 16/11, Bộ Thương mại Mỹ công bố thay đổi để chặn hoàn toàn việc cho công ty Trung Quốc thuê chip Nvidia. Theo CNBC, điều này đặt một phần doanh thu vào rủi ro.
 
@@ -58,7 +58,7 @@ Thứ Ba, hội đồng quản trị cũng lập một ủy ban mới về an ni
 
 Kress nói với giới phân tích rằng nhà cung cấp và đối tác vẫn đứng về phía Nvidia. "Chúng tôi lo được việc này," bà nói, theo BBC.
 
-Theo Reuters, buổi họp ngắn hơn thường lệ, khoảng 50 phút. Khoản đầu tư của Nvidia vào các "neocloud", tức các công ty cho thuê hạ tầng AI, giảm xuống 32 tỷ USD từ 36 tỷ USD ở quý trước.
+Theo Reuters, buổi họp ngắn hơn thường lệ, khoảng 50 phút. Các cam kết và thỏa thuận của Nvidia với các "neocloud", tức các công ty cho thuê hạ tầng AI, giảm xuống 32 tỷ USD từ 36 tỷ USD ở quý trước.
 
 Trong quý, Nvidia trả cho cổ đông 28,1 tỷ USD qua mua lại cổ phiếu và cổ tức. Hạn mức mua lại còn khoảng 227,3 tỷ USD, sau khi được nâng thêm 150 tỷ USD hồi tháng 9.
 
@@ -68,7 +68,7 @@ Trước giờ báo cáo, thị trường bán tháo. Thứ Ba, Dow Jones mất 
 
 Theo CNBC, cổ phiếu Nvidia đã giảm 24% trong tháng 11 và vừa có sáu tuần giảm liên tiếp, chuỗi dài nhất kể từ năm 2012.
 
-Sau báo cáo, CoreWeave tăng 8% và Nebius tăng 10% ngoài giờ. Theo CNBC, sáng thứ Tư có lúc Nvidia tăng gần 4% trước giờ mở cửa.
+Sau báo cáo, CoreWeave, Nebius và Iren tăng 8–10% ngoài giờ, theo CNBC. Sáng thứ Tư, cũng theo CNBC, có lúc Nvidia tăng gần 4% trước giờ mở cửa.
 
 Nhưng theo phân tích của Reuters, đà tăng ban đầu đã chững lại. Nhà đầu tư quay sang câu hỏi lớn hơn: ai sẽ thay Huang.
 
@@ -86,4 +86,5 @@ Nhu cầu AI vẫn mạnh. Rủi ro bây giờ nằm ở con người và ở Wa
 - [Reuters (qua Investing.com): 'Business as usual': Nvidia's Kress passes first test as board slams door on Huang](https://www.investing.com/news/stock-market-news/business-as-usual-nvidias-kress-passes-first-test-as-board-slams-door-on-huang-5034739)
 - [Reuters (qua Investing.com): Analysis - Nvidia's numbers impress but investors fret over CEO succession](https://www.investing.com/news/stock-market-news/analysisnvidias-numbers-impress-but-investors-fret-over-ceo-succession-5035070)
 - [BBC: Nvidia reports bumper results as firm says it's not reinstating Jensen Huang](https://www.bbc.com/news/articles/cm2kl50vkwkdo)
+- [The Verge: Read everything that Nvidia's board chair had to say about Jensen Huang](https://www.theverge.com/tech/1036160/nvidia-earnings-harvey-c-jones-jensen-huang)
 - [Investopedia: Nvidia's Third-Quarter Earnings, Outlook Top Wall Street Expectations](https://www.investopedia.com/nvidia-stock-rises-after-fy27-q3-revenue-net-profit-beat-expectations-nvda-earnings-12258779)
